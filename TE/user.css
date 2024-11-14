@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2, h1 {
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transform: translateY(9px); /* Сдвигает изображение вниз на 10px */
+}
+
+header {
+    background-color: #252b31; /* Темно-синий цвет */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Распределяет элементы по обеим сторонам */
+    align-items: center; /* Центрирует по вертикали */
+    padding: 0 20px; /* Отступы по бокам */
+}
+
+.nav-left ul,
+.nav-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Делаем элементы списка в ряд */
+}
+
+.nav-left ul li,
+.nav-right ul li {
+    margin: 0 15px; /* Отступ между элементами списка */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Изменяем цвет при наведении */
+}
+
+
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  
+  .ftco-section {
+    padding: 12em 0; }
+    .ftco-section h2 {
+      margin-bottom: 0; }
+  footer {
+      text-align: center;
+      padding: 7em 0; 
+        }
+        
+        /* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2937;
+    color: #fff;
+    margin-top: 100px;
+}
+
+  .footer-07 {
+    background: #121212; }
+    .footer-07 a {
+      color: #a3de83; }
+    .footer-07 p {
+      color: rgba(255, 255, 255, 0.3); }
+    .footer-07 .footer-heading {
+      font-size: 30px;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 30px; }
+      .footer-07 .footer-heading .logo {
+        color: #fff; }
+    .footer-07 .menu {
+      margin-bottom: 30px; }
+      .footer-07 .menu a {
+        color: rgba(255, 255, 255, 0.6);
+        margin: 0 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+    .footer-07 .ftco-footer-social li a {
+      background: transparent;
+      border: 1px solid #a3de83; }
+  
+
+
+
+
+
+
+
+

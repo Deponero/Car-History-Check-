@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transform: translateY(9px); /* Сдвигает изображение вниз на 10px */
+}
+
+
+header {
+    background-color: #252b31; /* Темно-синий цвет */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Распределяет элементы по обеим сторонам */
+    align-items: center; /* Центрирует по вертикали */
+    padding: 0 20px; /* Отступы по бокам */
+}
+
+.nav-left ul,
+.nav-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Делаем элементы списка в ряд */
+}
+
+.nav-left ul li,
+.nav-right ul li {
+    margin: 0 15px; /* Отступ между элементами списка */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Изменяем цвет при наведении */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1f2937;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: #ffcc00;
+    color: #1f2937;
+    border-radius: 5px;
+}
+
+.auth-btn {
+    color: #ffffff;
+    background-color: #ffcc00;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Основной контейнер для фото и формы поиска */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.image-section {
+    flex: 1;
+    max-width: 30%; /* Уменьшаем ширину фото */
+    padding-right: 80px; /* Немного отступа справа для разделения с формой */
+    position: relative;
+    left: -100px; /* Перемещаем фото левее */
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Блок с формой поиска */
+.search-box {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px; /* Фиксируем максимальную ширину для формы */
+}
+
+.search-box h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.search-box p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.search-box form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-box input {
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    color: #1f2937;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #e0b200;
+}
+
+
+
+/* Баннер */
+.banner {
+    text-align: center;
+    padding: 80px 20px;
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center; /* Центрирует элементы по горизонтали */
+    text-align: center;
+    max-width: 300px;
+    justify-content: space-evenly;
+}
+
+.benefit-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.benefit-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.benefit-foto {
+    width: 80px; /* Уменьшение размера изображения */
+    height: 80px; /* Фиксированная высота */
+    object-fit: cover; /* Сохранение пропорций изображения */
+    margin-bottom: 10px; /* Отступ от изображения до текста */
+}
+
+
+.blog-section {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-header h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.blog-header p {
+    font-size: 18px;
+    color: #777;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.blog-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-post .category {
+    font-size: 14px;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.blog-post .reading-time {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.blog-post .post-description {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.author-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.author-info .author {
+    font-size: 14px;
+    color: #333;
+}
+
+.author-info .date {
+    font-size: 14px;
+    color: #777;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    color: #e0b200;
+}
+
+.view-all {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-all:hover {
+    color: #e0b200;
+}
+
+@media (max-width: 900px) {
+    .blog-posts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-posts {
+        grid-template-columns: 1fr;
+    }
+}
+.blog-post {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Ограничиваем максимальную высоту изображения */
+    object-fit: cover; /* Это поможет сохранить пропорции и избежать искажений */
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.blog-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.blog-header p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.category, .reading-time {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.post-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  
+  .ftco-section {
+    padding: 12em 0; }
+    .ftco-section h2 {
+      margin-bottom: 0; }
+  footer {
+      text-align: center;
+      padding: 7em 0; 
+        }
+        
+        /* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2937;
+    color: #fff;
+    margin-top: 100px;
+}
+
+  .footer-07 {
+    background: #121212; }
+    .footer-07 a {
+      color: #a3de83; }
+    .footer-07 p {
+      color: rgba(255, 255, 255, 0.3); }
+    .footer-07 .footer-heading {
+      font-size: 30px;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 30px; }
+      .footer-07 .footer-heading .logo {
+        color: #fff; }
+    .footer-07 .menu {
+      margin-bottom: 30px; }
+      .footer-07 .menu a {
+        color: rgba(255, 255, 255, 0.6);
+        margin: 0 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+    .footer-07 .ftco-footer-social li a {
+      background: transparent;
+      border: 1px solid #a3de83; }
+  
+
+      .example-report-box {
+        display: inline-table;
+        background-color: #f7f7f7;
+        border: 1px solid #ccc;
+        border-radius: 24px;
+        padding: 20px;
+        max-width: 400px;
+        margin: 115px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 24px;  
+  
+      }
+      
+      .example-report-box h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      
+      .report-image {
+        width: 100%; /* Ширина изображения по ширине контейнера */
+        height: auto; /* Автоматическая высота для сохранения пропорций */
+        border-radius: 6px; /* Скругление углов изображения */
+        margin-bottom: 15px; /* Отступ снизу */
+      }
+      
+      .report-features {
+        list-style: none; /* Убираем стандартные маркеры */
+        padding-left: 24px;
+      }
+      
+      .report-features li {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center; /* Выравниваем иконку и текст по вертикали */
+      }
+      .icon-ok {
+        font-size: 1.2rem;
+        margin-right: 10px;
+        color: #006f3f;
+    }
+    
+    .icon-warning {
+        font-size: 1.2rem;
+        margin-right: 10px;
+        color: #ffab00;
+    }
+    
+      
+      .view-report-btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+      

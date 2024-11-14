@@ -1,0 +1,191 @@
+{
+  "vehicles": [
+    {
+      "plate": "444MUS01",
+      "name": "Toyota Camry",
+      "year": 2020,
+      "photo": "Photos/front of Camry.jpg",
+      "vin": "4T1B11HK4LU123456",
+      "category": "Sedan",
+      "marketPrice": "$30,000",
+      "technicalDetails": {
+        "year": 2020,
+        "brand": "Toyota",
+        "model": "Camry",
+        "engine": "2.5L",
+        "madeIn": "JAPAN (JP)",
+        "fuelType": "Gasoline"
+      },
+      "ownersHistory": [
+        {
+          "ownerNumber": 1,
+          "ownershipType": "Личный авто",
+          "country": "США",
+          "annualMileage": "3,634 км",
+          "lastKnownMileage": "11,809 км",
+          "purchaseYear": 2012,
+          "ownershipDuration": "3 г 3 м"
+        }
+      ],
+      "passportHistory": {
+        "currentInfo": {
+          "state": "CA",
+          "mileage": "3 км",
+          "event": "Техпаспорт и регистрация"
+        },
+        "history": [
+          {
+            "date": "5 мар 2020 г.",
+            "state": "CA",
+            "mileage": "10,000 км",
+            "event": "Техпаспорт и регистрация"
+          },
+          {
+            "date": "10 янв 2020 г.",
+            "state": "CA",
+            "mileage": "3,500 км",
+            "event": "Техпаспорт и регистрация"
+          }
+        ]
+      },
+      "gallery": [
+        "Photos/front of Camry.jpg",
+        "Photos/Inside of Camry.jpg",
+        "Photos/left side of Camry.jpg",
+        "Photos/rear of Camry.jpg",
+        "Photos/interior of Camry.jpg"
+      ],
+      "priceChanges": [
+        {
+          "date": "27 сен 2019 г.",
+          "price": "$33,500",
+          "mileage": "30,249 км",
+          "difference": "-$72,499",
+          "direction": "down"
+        },
+        {
+          "date": "27 авг 2015 г.",
+          "price": "$105,999",
+          "mileage": "11,420 км",
+          "difference": "+$10,999",
+          "direction": "up"
+        }
+      ]
+    },
+    {
+      "name": "Honda Civic",
+      "year": 2020,
+      "photo": "Photos/front of Civic.jpg",
+      "vin": "1HGFA16578L123456",
+      "plate": "B123XYZ",
+      "category": "Sedan",
+      "marketPrice": "$25,000",
+      "technicalDetails": {
+        "year": 2020,
+        "brand": "Honda",
+        "model": "Civic",
+        "engine": "1.8L",
+        "madeIn": "JAPAN",
+        "fuelType": "Gasoline"
+      },
+      "ownersHistory": [
+        {
+          "ownerNumber": 1,
+          "ownershipType": "Первый владелец",
+          "country": "США",
+          "annualMileage": "15,000 км",
+          "lastKnownMileage": "30,000 км",
+          "purchaseYear": 2020,
+          "ownershipDuration": "3 г"
+        }
+      ],
+      "passportHistory": {
+        "currentInfo": {
+          "state": "TX",
+          "mileage": "30,000 км",
+          "event": "Техпаспорт и регистрация"
+        },
+        "history": [
+          {
+            "date": "10 янв 2020 г.",
+            "state": "TX",
+            "mileage": "0 км",
+            "event": "Техпаспорт и регистрация"
+          }
+        ]
+      },
+      "gallery": [
+        "Photos/front of Civic.jpg",
+        "Photos/interior of Civic.jpg",
+        "Photos/rear of Civic.jpg"
+      ],
+      "priceChanges": [
+        {
+          "date": "10 янв 2020 г.",
+          "price": "$25,000",
+          "mileage": "0 км",
+          "difference": "+$25,000",
+          "direction": "up"
+        }
+      ]
+    },
+    {
+      "name": "Ford Mustang",
+      "year": 2018,
+      "photo": "Photos/front of Mustang.jpg",
+      "vin": "1FA6P8CF8J5151234",
+      "plate": "C987ZYX",
+      "category": "Coupe",
+      "marketPrice": "$35,000",
+      "technicalDetails": {
+        "year": 2018,
+        "brand": "Ford",
+        "model": "Mustang",
+        "engine": "5.0L V8",
+        "madeIn": "USA",
+        "fuelType": "Gasoline"
+      },
+      "ownersHistory": [
+        {
+          "ownerNumber": 1,
+          "ownershipType": "Лизинг",
+          "country": "США",
+          "annualMileage": "8,000 км",
+          "lastKnownMileage": "20,000 км",
+          "purchaseYear": 2018,
+          "ownershipDuration": "2 г 3 м"
+        }
+      ],
+      "passportHistory": {
+        "currentInfo": {
+          "state": "FL",
+          "mileage": "20,000 км",
+          "event": "Техпаспорт и регистрация"
+        },
+        "history": [
+          {
+            "date": "15 дек 2018 г.",
+            "state": "FL",
+            "mileage": "0 км",
+            "event": "Техпаспорт и регистрация"
+          }
+        ]
+      },
+      "gallery": [
+        "Photos/front of Mustang.jpg",
+        "Photos/interior of Mustang.jpg",
+        "Photos/rear of Mustang.jpg"
+      ],
+      "priceChanges": [
+        {
+          "date": "15 дек 2018 г.",
+          "price": "$35,000",
+          "mileage": "0 км",
+          "difference": "+$35,000",
+          "direction": "up"
+        }
+      ]
+    }
+  ]
+}
+

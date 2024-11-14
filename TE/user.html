@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user.css"> 
+    <script src="user.js"></script>
+    <title>Профиль</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="TEST.html">Пример отчета</a></li>
+                    <li><a href="reports.html">Цены</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li id="authLink"><a href="123.html">Sign in\up</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    <div id="profile-content">
+        <!-- Контент профиля будет загружен сюда -->
+    </div>
+
+    <script>
+        // Проверка, авторизован ли пользователь
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+        if (currentUser) {
+            // Если пользователь авторизован, показываем его профиль
+            document.getElementById("profile-content").innerHTML = `
+                <h1>Добро пожаловать, ${currentUser.email}!</h1>
+                <p>Email: ${currentUser.email}</p>
+                <button onclick="logout()">Выйти</button>
+            `;
+        } else {
+            // Если пользователь не авторизован, перенаправляем на страницу входа
+            document.getElementById("profile-content").innerHTML = `
+                <p>Вы не авторизованы. Пожалуйста, <a href="123.html">войдите</a> в систему.</p>
+            `;
+        }
+
+        // Функция для выхода из профиля
+        function logout() {
+            localStorage.removeItem("currentUser"); // Удаляем информацию о текущем пользователе
+            window.location.href = "123.html"; // Перенаправляем на страницу входа
+        }
+    </script>
+
+    
+    <footer class="footer-07">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <p class="menu">
+                        <a href="Main.html">Главная</a>
+                        <a href="TEST.html">Пример отчета</a>
+                        <a href="123.html">Sign in</a>
+                        <a href="123.html">Sign up</a>
+                        <a href="reports.html">Цены</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+                </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

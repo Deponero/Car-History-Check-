@@ -1,0 +1,6 @@
+json-server --watch Data.json
+json-server --watch db.json
+
+cd C:\Users\Амирлан\Desktop\TE
+
+

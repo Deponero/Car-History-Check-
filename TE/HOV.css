@@ -1,0 +1,608 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    position: fixed;
+    top: 20%;
+    left: 11px;
+    width: 220px;
+    background-color: #ffffff; /* Dark blue background */
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.sidebar a {
+    color: #003c71; /* Dark blue text color */
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    display: block;
+    border-radius: 4px;
+}
+
+.sidebar a:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+    color: #003c71;
+}
+
+
+.container {
+    display: flex;
+    margin-left: 220px; /* Отступ, чтобы основное содержимое не перекрывалось навигацией */
+}
+
+h2, h1 {
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#carPhotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 140px;
+    margin-top: 20px;
+}
+
+#carPhotos img {
+    width: 300px; /* Устанавливаем желаемую ширину */
+    height: 250px; /* Устанавливаем желаемую высоту */
+    object-fit: cover; /* Чтобы изображение не искажалось */
+    margin: 5px; /* Отступ между изображениями */
+    border-radius: 8px; /* Закругление углов */
+}
+
+
+#carPhotos img:hover {
+    transform: scale(1.05);
+}
+
+#carSpecs, #customsInfo, #ownerInfo, #marketInfo {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+#carSpecs p, #customsInfo p, #ownerInfo p, #marketInfo p {
+    color: #555;
+    font-size: 16px;
+}
+
+#back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056a0;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#back-button:hover {
+    background-color: #003c71;
+}
+
+
+header {
+    background-color: #252b31; /* Темно-синий цвет */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 0;
+}
+
+form h2 {
+    margin: 0 0 20px 0;
+    color: #003c71; /* Заголовок с темно-синим цветом */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px; /* Максимальная ширина поля ввода */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #003c71; /* Темно-синий цвет */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056a0; /* Светлее при наведении */
+}
+
+
+
+.hidden {
+    display: none;
+}
+img {
+    width: 100%; /* Подгоняет ширину изображения под родительский контейнер */
+    max-width: 300px; /* Максимальная ширина каждого изображения */
+    height: auto; /* Автоматически сохраняет пропорции */
+    object-fit: cover; /* Заполняет контейнер, обрезая края при необходимости */
+}
+
+
+header, footer {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"], input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Распределяет элементы по обеим сторонам */
+    align-items: center; /* Центрирует по вертикали */
+    padding: 0 20px; /* Отступы по бокам */
+}
+
+.nav-left ul,
+.nav-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Делаем элементы списка в ряд */
+}
+
+.nav-left ul li,
+.nav-right ul li {
+    margin: 0 15px; /* Отступ между элементами списка */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Изменяем цвет при наведении */
+}
+
+
+.car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Выравнивание по горизонтали */
+}
+
+.car-card {
+    width: 30%; /* Измените на нужный вам размер */
+    margin-bottom: 20px; /* Отступ между карточками */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Тень для карточек */
+    border-radius: 8px; /* Закругление углов */
+    overflow: hidden; /* Скрытие переполнения */
+}
+
+.car-image {
+    width: 100%; /* Заставляем изображение занимать всю ширину карточки */
+    height: 200px; /* Устанавливаем фиксированную высоту */
+    object-fit: cover; /* Чтобы изображение не искажалось */
+}
+
+.car-info {
+    padding: 10px; /* Отступы для текста */
+    text-align: center; /* Центрируем текст */
+}
+
+
+/* Пример стилей для страницы История автомобиля */
+#carDetails {
+    padding: 20px;
+}
+
+#carPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#carPhotos img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#carSpecs {
+    margin-top: 20px;
+}
+
+#carSpecs p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Блок общей информации о машине */
+.report-summary {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.car-overview {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.car-photo img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+.car-basic-info {
+    font-size: 16px;
+    color: #666;
+}
+
+.car-basic-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Технические характеристики */
+.technical-details {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.specifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.specifications div {
+    font-size: 16px;
+    color: #555;
+    flex: 1 1 45%; /* Разделяет блоки на две колонки */
+}
+
+/* История эксплуатации */
+.ownership-history {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.owner-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.owner {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 30%; /* Максимум три блока в ряд */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.owner h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.owner p {
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Стиль для Истории техпаспорта */
+.passport-history {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.passport-title h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.passport-title p {
+    font-size: 16px;
+    color: #777;
+}
+
+.passport-entry {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.passport-entry p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.passport-history-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.passport-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.passport-item p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.passport-item strong {
+    font-weight: bold;
+}
+
+
+/* Галерея фото */
+.gallery {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* Стили для блока изменения цены */
+.price-changes {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.price-change {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.date-price p {
+    margin: 0;
+}
+
+.date {
+    font-size: 16px;
+    color: #555;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.details {
+    text-align: right;
+}
+
+.mileage {
+    font-size: 14px;
+    color: #777;
+}
+
+.difference {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.difference span.icon-change {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.text-danger {
+    color: red;
+}
+
+.text-success {
+    color: green;
+}
+
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  
+  .ftco-section {
+    padding: 12em 0; }
+    .ftco-section h2 {
+      margin-bottom: 0; }
+  footer {
+      text-align: center;
+      padding: 7em 0; 
+        }
+        
+        /* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2937;
+    color: #fff;
+    margin-top: 100px;
+}
+
+  .footer-07 {
+    background: #121212; }
+    .footer-07 a {
+      color: #a3de83; }
+    .footer-07 p {
+      color: rgba(255, 255, 255, 0.3); }
+    .footer-07 .footer-heading {
+      font-size: 30px;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 30px; }
+      .footer-07 .footer-heading .logo {
+        color: #fff; }
+    .footer-07 .menu {
+      margin-bottom: 30px; }
+      .footer-07 .menu a {
+        color: rgba(255, 255, 255, 0.6);
+        margin: 0 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+    .footer-07 .ftco-footer-social li a {
+      background: transparent;
+      border: 1px solid #a3de83; }
+  

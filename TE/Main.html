@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="123456e.css">
+    <script src="MainJS.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="TEST.html">Пример отчета</a></li>
+                    <li ><a href="reports.html">Цены</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li id="authLink"><a href="123.html">Sign in/up</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    
+
+    <main>
+        <!-- Основной контейнер для фото и формы поиска -->
+        <section class="main-content">
+            <div class="image-section">
+                <img src="Photos/main-Photoroom.png" alt="Фото автомобиля" class="car-image">
+            </div>
+            <div class="search-box">
+                <div class="container">
+                    <h1>Проверьте историю автомобиля по VIN или госномеру</h1>
+                    <p>Введите номер или VIN для получения информации</p>
+    
+                    <input type="text" id="searchField" placeholder="Введите строку...">
+                    <button id="searchBtn">Поиск</button>
+                  
+                    <script>
+                      $(document).ready(function() {
+                        // Обработчик для кнопки поиска
+                        $('#searchBtn').click(function() {
+                          var searchTerm = $('#searchField').val().trim();
+                  
+                          // Условия для проверки строки и редирект
+                          if (searchTerm === '444MUS01') {
+                            // Перенаправление на первую страницу
+                            window.location.href = '1auto.html';  // Укажите нужный URL
+                          } else if (searchTerm === '005EXY08') {
+                            // Перенаправление на вторую страницу
+                            window.location.href = '2auto.html';  // Укажите нужный URL
+                          } else if(searchTerm == '003TRZ08'){
+                            window.location.href = '3auto.html';
+                          } else {
+                            // Если не совпало ни с одной из строк
+                            alert('Такой строки не найдено.');
+                          }
+                        });
+                      });
+                    </script>
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <div class="example-report-box">
+            <h3>Примеры отчёта</h3>
+            <!-- Изображение автомобиля -->
+            <img src="Photos/Merce.png" alt="Автомобиль" class="report-image">
+          
+            <!-- Список с иконками и текстом -->
+            <ul class="report-features">
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Найдены характеристики по VIN</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> 63 044 км — 12.06.2023</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Техническое состояние известно</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Юридическая чистота проверена</li>
+              <li><span class="icon-warning"><i class="fas fa-exclamation-triangle"></i></span> В залоге в РК</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Криминальная чистота проверена</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Агрегатные номера совпадают</li>
+            
+            </ul>
+          </div>
+          <div class="example-report-box">
+            <h3>Примеры отчёта</h3>
+            <!-- Изображение автомобиля -->
+            <img src="Photos/audi123.png" alt="Автомобиль" class="report-image">
+          
+            <!-- Список с иконками и текстом -->
+            <ul class="report-features">
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Найдены характеристики по VIN</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> 63 044 км — 12.06.2023</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Техническое состояние известно</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Юридическая чистота проверена</li>
+              <li><span class="icon-warning"><i class="fas fa-exclamation-triangle"></i></span> В залоге в РК</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Криминальная чистота проверена</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Агрегатные номера совпадают</li>
+            </ul>
+          
+          </div>
+          <div class="example-report-box">
+            <h3>Примеры отчёта</h3>
+            <!-- Изображение автомобиля -->
+            <img src="Photos/mercedes.png" alt="Автомобиль" class="report-image">
+          
+            <!-- Список с иконками и текстом -->
+            <ul class="report-features">
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Найдены характеристики по VIN</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> 63 044 км — 12.06.2023</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Техническое состояние известно</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Юридическая чистота проверена</li>
+              <li><span class="icon-warning"><i class="fas fa-exclamation-triangle"></i></span> В залоге в РК</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Криминальная чистота проверена</li>
+              <li><span class="icon-ok"><i class="fas fa-check"></i></span> Агрегатные номера совпадают</li>
+            </ul>
+          </div>
+         
+          
+        <section class="benefits">
+            <div class="benefit-item">
+                <img src="Photos/LIKE.webp" alt="LIKE" class="benefit-foto">
+                <h3>98%</h3>
+                <p>Удовлетворенность качеством</p>
+            </div>
+            <div class="benefit-item">
+                <img src="Photos/PHONE.webp" alt="PHONE" class="benefit-foto">
+                <h3>10 минут</h3>
+                <p>Среднее время ответа</p>
+            </div>
+            <div class="benefit-item">
+                <img src="Photos/CLOCK.png" alt="CLOCK" class="benefit-foto">
+                <h3>24/7</h3>
+                <p>Доступность чата</p>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <div class="blog-header">
+                <h2>Блог по автотематике</h2>
+            </div>
+        
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <img src="Photos/blog1.jpg" alt="Blog Post 1" class="post-image">
+                    <h3>Что обозначают марка и модель автомобиля?</h3>
+                    <p class="category">Советы по покупке автомобилей</p>
+                    <p class="reading-time">5 мин чтение</p>
+                    <p class="post-description">Статья, в которой рассказывается о разнице между маркой и моделью автомобиля.</p>
+                    <div class="author-info">
+                        
+                    </div>
+                    <a href="blog1.html" class="read-more">Подробнее</a>
+                </div>
+        
+                <div class="blog-post">
+                    <img src="Photos/blog2.jpg" alt="Blog Post 2" class="post-image">
+                    <h3>Что такое диагностика автомобиля?</h3>
+                    <p class="category">Обслуживание и безопасность</p>
+                    <p class="reading-time">5 мин чтение</p>
+                    <p class="post-description">Все, что вам нужно знать о диагностике автомобилей.</p>
+                    <div class="author-info">
+                        
+                    </div>
+                    <a href="blog2.html" class="read-more">Подробнее</a>
+                </div>
+        
+                <div class="blog-post">
+                    <img src="Photos/blog3.png" alt="Blog Post 3" class="post-image">
+                    <h3>Когда наступает самое подходящее время для замены автомобильного аккумулятора</h3>
+                    <p class="category">Обслуживание и безопасность</p>
+                    <p class="reading-time">5 мин чтение</p>
+                    <p class="post-description">Читайте дальше, чтобы узнать, как часто вам следует заменять автомобильный аккумулятор...</p>
+                    <div class="author-info">
+                     
+                    </div>
+                    <a href="blog3.html" class="read-more">Подробнее</a>
+                </div>
+            </div>
+        
+            
+        </section>
+        
+    </main>
+
+    <footer class="footer-07">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <p class="menu">
+                        <a href="Main.html">Главная</a>
+                        <a href="TEST.html">Пример отчета</a>
+                        <a href="123.html">Sign in</a>
+                        <a href="123.html">Sign up</a>
+                        <a href="reports.html">Цены</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">
+                  Copyright &copy; All rights reserved 
+                </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

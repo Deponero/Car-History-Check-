@@ -1,0 +1,165 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transform: translateY(9px); /* Сдвигает изображение вниз на 10px */
+}
+
+
+header {
+    background-color: #252b31;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Стиль для секции w1 */
+.w1 {
+    background-color: #f0f0f0; /* Светлый фон для контраста */
+    padding: 30px; /* Отступы внутри секции */
+    text-align: center; /* Выравнивание текста по центру */
+    margin-bottom: 40px; /* Отступ снизу */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.w1 h3 {
+    color: #333; /* Темный цвет текста */
+    font-size: 1.8rem; /* Увеличенный размер шрифта */
+    font-weight: bold; /* Полужирный шрифт */
+    margin: 0; /* Убираем отступы */
+}
+
+
+.nav-left ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-left ul li {
+    margin: 0 15px;
+}
+
+.nav-left ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-right .auth-btn {
+    color: #ffffff;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.nav-right .auth-btn:hover {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.w1 {
+    padding: 20px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.car-image {
+    width: 100%;
+    max-width: 1500px;
+    margin: 20px 0;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Стили для текста */
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Стили для кнопки */
+.search-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.search-button:active {
+    background-color: #004085;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+
+    .car-image {
+        max-width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+        padding: 14px;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
